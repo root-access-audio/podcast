@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-30",
+  "title": "Daily IAM Market Briefing for Leaders and Technical Practitioners",
+  "summary": "The IAM market is shifting toward real-time, AI-native security enforcement for non-human identities, driven by the rapid proliferation of AI agents and the critical gaps in current identity governance tools. As AI agents multiply, understanding their access to sensitive data is foundational to security, but current tools lack the ability to connect identity governance with data security for non-human identities. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.",
+  "durationSec": 285,
+  "pubDate": "2026-09-30T20:36:31.682Z"
+}
