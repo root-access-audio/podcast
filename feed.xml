@@ -12,13 +12,13 @@
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
-    <itunes:image href="https://root-access-audio.github.io/podcast/artwork/cover.png"/>
+    <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/cover.png"/>
     <itunes:owner>
       <itunes:name>Identity Security Daily</itunes:name>
       <itunes:email>identity-security-daily@users.noreply.github.com</itunes:email>
     </itunes:owner>
     <image>
-      <url>https://root-access-audio.github.io/podcast/artwork/cover.png</url>
+      <url>https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/cover.png</url>
       <title>Identity Security Daily</title>
       <link>https://root-access-audio.github.io/podcast/</link>
     </image>
