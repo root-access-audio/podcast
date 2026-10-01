@@ -4,8 +4,8 @@
     <title>Identity Security Daily</title>
     <link>https://root-access-audio.github.io/podcast/</link>
     <language>en-us</language>
-    <description>A five-minute daily briefing, done by superintelligence, on the identity governance market, and AI security that changes access. Each episode is produced locally from public reporting.</description>
-    <itunes:summary>A five-minute daily briefing on SailPoint, the identity governance market, and AI security that changes access. Each episode is produced locally from public reporting.</itunes:summary>
+    <description>A neutral five-minute daily briefing on the identity security market: IAM, identity governance, privileged access, and AI security that changes access. Each episode is produced locally from public reporting.</description>
+    <itunes:summary>A neutral five-minute daily briefing on the identity security market: IAM, identity governance, privileged access, and AI security that changes access. Each episode is produced locally from public reporting.</itunes:summary>
     <itunes:author>Identity Security Daily</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
@@ -22,8 +22,21 @@
       <title>Identity Security Daily</title>
       <link>https://root-access-audio.github.io/podcast/</link>
     </image>
-    <lastBuildDate>Wed, 30 Sep 2026 20:36:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 14:36:24 GMT</lastBuildDate>
     <generator>Identity Security Daily</generator>
+    <item>
+      <title>Daily IAM Market Briefing for Leaders and Technical Practitioners</title>
+      <itunes:title>Daily IAM Market Briefing for Leaders and Technical Practitioners</itunes:title>
+      <description><![CDATA[The IAM market is shifting from static access control to dynamic, AI-driven security enforcement, with critical gaps emerging in real-time governance of AI agents and integrated identity workflows. This integration directly addresses a critical operational gap where governance teams define access but security teams manually enforce it, leading to potential security risks from outdated credentials. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.]]></description>
+      <itunes:summary>The IAM market is shifting from static access control to dynamic, AI-driven security enforcement, with critical gaps emerging in real-time governance of AI agents and integrated identity workflows. This integration directly addresses a critical operational gap where governance teams define access but security teams manually enforce it, leading to potential security risks from outdated credentials. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.</itunes:summary>
+      <enclosure url="https://root-access-audio.github.io/podcast/episodes/2026-10-01.mp3" length="4798893" type="audio/mpeg"/>
+      <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-01:identity-security-daily</guid>
+      <link>https://root-access-audio.github.io/podcast/episodes/2026-10-01.mp3</link>
+      <pubDate>Thu, 01 Oct 2026 14:36:24 GMT</pubDate>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Daily IAM Market Briefing for Leaders and Technical Practitioners</title>
       <itunes:title>Daily IAM Market Briefing for Leaders and Technical Practitioners</itunes:title>
