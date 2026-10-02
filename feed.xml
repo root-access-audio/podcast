@@ -12,17 +12,17 @@
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
-    <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/show.jpg"/>
+    <itunes:image href="https://root-access-audio.github.io/podcast/artwork/show-cover.jpg"/>
     <itunes:owner>
       <itunes:name>Identity Security Daily</itunes:name>
       <itunes:email>identity-security-daily@users.noreply.github.com</itunes:email>
     </itunes:owner>
     <image>
-      <url>https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/show.jpg</url>
+      <url>https://root-access-audio.github.io/podcast/artwork/show-cover.jpg</url>
       <title>Identity Security Daily</title>
       <link>https://github.com/root-access-audio/podcast</link>
     </image>
-    <lastBuildDate>Fri, 02 Oct 2026 08:22:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 08:42:15 GMT</lastBuildDate>
     <generator>Identity Security Daily</generator>
     <item>
       <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
@@ -32,7 +32,7 @@
       <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-02.mp3" length="4801197" type="audio/mpeg"/>
       <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-02:identity-security-daily</guid>
       <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-02.mp3</link>
-      <pubDate>Fri, 02 Oct 2026 08:22:01 GMT</pubDate>
+      <pubDate>Fri, 02 Oct 2026 08:42:15 GMT</pubDate>
       <itunes:duration>00:05:00</itunes:duration>
       <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-10-02.jpg"/>
       <itunes:season>1</itunes:season>
