@@ -1,40 +1,80 @@
 # Identity Security Daily
 
-A local application running in a VM on a home server. It discovers reporting about the cybersecurity market, breaches, buyer priorities, SailPoint, IAM, IGA, identity security, competitors, and automated access; reads the public publisher pages; and produces an evidence-grounded daily sales-enablement audio.
+**Season 1: Who Holds the Keys**
 
-Ollama and Qwen3 perform the analysis locally. Kokoro 82M performs natural speech synthesis locally, with Piper as a lightweight fallback. No article text, prompt, or audio is sent to a hosted AI API, everything runs locally (out of curiosity).
+A five-minute daily cybersecurity briefing for client conversations. Each episode picks three to five stories from the past few days: breaches, market moves, buyer pressure, regulation, and what is happening in identity security. It explains what happened, why it matters, and what a customer might ask about it.
 
-The public show is an experiment in end-to-end local AI production. Source analysis, editorial synthesis, writing, and narration happen on a small home server with open-source tools. Collection, evidence validation, audio assembly, and publishing are automated by the application rather than a generative model.
+New episodes come out every morning.
 
-## How the editorial pipeline works
+- **Feed:** [`feed.xml`](https://raw.githubusercontent.com/root-access-audio/podcast/main/feed.xml)
+- **Apple Podcasts:** search for *Identity Security Daily*
 
-1. RSS and Google News are discovery inputs, not the briefing itself. Vendor and identity blogs that publish the full post in the feed are kept as articles immediately.
-2. Other candidates are resolved to publisher pages and parsed with Mozilla Readability. Full articles are saved in a local knowledge base and can be recalled for 21 days, so a thin news morning still has source material.
-3. Each source receives a transparent trust score based on publisher type, author/date metadata, article depth, promotional language, extraction quality, and corroborating coverage.
-4. Qwen3 produces a structured analysis with exact evidence snippets, technical impact, business impact, caveats, and IAM-market significance.
-5. Duplicate coverage is clustered. The algorithm selects three to five stories by relevance, consequence, novelty, usefulness, trust, recency, and topic diversity.
-6. A second local-model pass builds one coherent thesis and a deeper narrative across the selected stories.
+## Why this exists
 
-Vendor material is allowed, but it is labeled as vendor material and promotional claims reduce confidence. The model is instructed to use only supplied evidence. Exact evidence snippets are checked against the source text before an analysis is accepted.
+This is a hobby project. I wanted to see how far local large language models can go on a real task, with no cloud and no API keys. The question was whether a small open model on one home server could read a day's security news, pick out what matters, and produce something a person would want to listen to.
 
-## What it produces
+The podcast is the test. It is also useful to me, because it is the kind of briefing I would want before a client call.
 
-Each run writes a folder under `output/YYYY-MM-DD/`:
+## Fully AI-produced
 
-- `identity-security-daily.mp3` — the episode, aimed at 5 minutes
-- `briefing.txt` — the exact words that were spoken
-- `show-notes.md` — thesis, source assessment, key analysis, caveats, and links
-- `sources.json` — provenance, trust scores, evidence snippets, model/version, and feed status
-- `analysis-diagnostics.json` — written when deep analysis is partial or fails
+Every episode is generated automatically. No one writes, edits, or records it. A local language model analyzes the articles and writes the script. A local text-to-speech model reads it. The only human work is building and tuning the pipeline.
 
-Full article text is stored only in the local knowledge base at `~/.local/share/identity-briefing/knowledge` (override with `BRIEFING_KNOWLEDGE`). Entries expire after 21 days. That text is not copied into show notes, diagnostics, or the podcast repository.
+That means mistakes can happen. The pipeline is strict about evidence, but it is still an experiment. Before relying on a detail, check the linked source in the episode notes.
 
-## Feeds
+## How an episode is made
 
-Focused Google News searches cover SailPoint, IGA competitors (Saviynt, Omada, One Identity, Ping Identity, ForgeRock, EmpowerID), adjacent platforms (Okta, CyberArk, Microsoft Entra, BeyondTrust, Delinea, Silverfort, Veza), automated identity topics, cybersecurity funding and acquisitions, CISO priorities and spending, and material enterprise breaches.
+1. **Discover.** RSS feeds from security publishers and identity vendors are collected, plus targeted news searches for the security market, breaches, and buyer priorities.
+2. **Filter.** Duplicates, stock-price chatter, and low-context items are dropped. Candidates are ranked for relevance, freshness, and whether they would be useful in a customer conversation.
+3. **Read.** Each candidate article is fetched and its text extracted. That text stays on the server and is kept for up to 21 days. It is never published here.
+4. **Score sources.** Each source gets a trust score based on the publisher, article depth, author and date, promotional language, and whether other outlets report the same story.
+5. **Analyze.** A local language model reads each article and returns a structured analysis: what happened, technical impact, business impact, market significance, and caveats. Every claim must cite a specific sentence in the source. Analyses whose evidence fails the check are rejected.
+6. **Select.** At least three stories must clear the quality bar, or no episode is published that day. The app never pads a thin news day.
+7. **Write.** The model turns the selected stories into one connected script of about 650 words, using only the verified analysis.
+8. **Speak.** A local neural voice reads the script. The audio is adjusted to about five minutes and encoded as MP3.
+9. **Publish.** The MP3, show notes, episode artwork, and RSS feed are committed to this repository. Apple Podcasts and other apps pick up the new episode from the feed.
 
-Publisher feeds include Dark Reading, BleepingComputer, Krebs on Security, The Register, The Hacker News, CISA advisories, Help Net Security, SecurityWeek, CSO Online, Cybersecurity Dive, and Schneier on Security. Direct identity-vendor feeds include Saviynt, Veza, Silverfort, Delinea, Omada, Microsoft Security, Auth0, and Okta security advisories. SailPoint has no public article feed, so SailPoint coverage still comes from Google News and from articles already saved in the knowledge base. SailPoint forum threads are left out. If SailPoint itself is quiet for two days, that section reaches back up to two weeks so the company is still covered.
+## The stack
 
-Stock-price chatter and low-context threat notices are dropped. General security reporting is kept when it can support a useful client conversation about buyer pressure, business exposure, spending, regulation, market structure, or a material breach. A thin news day produces fewer stories rather than padding the episode.
+Everything runs on one Ubuntu virtual machine on a small home server, on CPU only: 12 vCPUs, 16 GB of RAM, and no GPU. Every tool is open source.
 
-Google News RSS is included for personal, non-commercial use, which is the limit stated on that feed. Publisher feeds are read directly.
+| Layer | Tool |
+| --- | --- |
+| Orchestration | [Node.js](https://nodejs.org) 22, plain JavaScript |
+| Article extraction | [Mozilla Readability](https://github.com/mozilla/readability) and [jsdom](https://github.com/jsdom/jsdom) |
+| Model runtime | [Ollama](https://ollama.com) |
+| Language model | [Qwen3](https://github.com/QwenLM/Qwen3) 4B, an open-weight model run locally |
+| Speech | [Kokoro](https://github.com/hexgrad/kokoro) 82M, with [Piper](https://github.com/rhasspy/piper) as a fallback |
+| Audio | [FFmpeg](https://ffmpeg.org) |
+| Artwork | [Pillow](https://python-pillow.org), applied to one generated base image |
+| Hosting | Git and this public GitHub repository |
+| Scheduling | cron |
+
+No article text, prompt, or audio is sent to a hosted AI service.
+
+## What I learned so far
+
+- **A 4B model is enough if the pipeline does the checking.** Smaller models paraphrase and invent quotes. Having the model cite a sentence number, while the app copies the exact sentence, solved most of that.
+- **CPU-only works, slowly.** One day's analysis takes from several minutes to around an hour, depending on how many articles need reading. The model handles articles one at a time, and saved analyses are reused on reruns.
+- **Speech is the hard part to make sound human.** Kokoro sounds much more natural than older engines. Some words still need help: AI is spoken as "superintelligence," and vendor names get phonetic spellings.
+- **Failing closed beats a bad episode.** If evidence is thin or the model cannot produce valid analysis, nothing is published that day.
+
+## Sources and rights
+
+Stories come from public reporting, including Dark Reading, BleepingComputer, Krebs on Security, The Register, The Hacker News, CISA, Help Net Security, SecurityWeek, CSO Online, Cybersecurity Dive, Schneier on Security, and vendor blogs. Google News search results are used only to discover articles. Each episode's show notes link to the original articles. Full article text is not stored or republished here.
+
+## Disclaimer
+
+This independent podcast is not associated with, sponsored by, or endorsed by any vendor mentioned in an episode. Company, vendor, and product names are used only for news reporting, commentary, and identification. Nothing here is investment advice.
+
+## Repository layout
+
+```
+feed.xml                       podcast RSS feed
+episodes/YYYY-MM-DD.mp3        episode audio
+episodes/YYYY-MM-DD.md         show notes with source links
+episodes/YYYY-MM-DD.json       episode metadata
+artwork/show.jpg               show cover
+artwork/episodes/YYYY-MM-DD.jpg  episode artwork
+```
+
+This repository is written by the pipeline. Manual changes are overwritten on the next publish.

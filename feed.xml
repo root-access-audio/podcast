@@ -2,38 +2,59 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
     <title>Identity Security Daily</title>
-    <link>https://root-access-audio.github.io/podcast/</link>
+    <link>https://github.com/root-access-audio/podcast</link>
     <language>en-us</language>
-    <description>A neutral five-minute daily briefing on the identity security market: IAM, identity governance, privileged access, and AI security that changes access. Each episode is produced locally from public reporting.</description>
-    <itunes:summary>A neutral five-minute daily briefing on the identity security market: IAM, identity governance, privileged access, and AI security that changes access. Each episode is produced locally from public reporting.</itunes:summary>
+    <description>Season 1: Who Holds the Keys. A five-minute cybersecurity sales briefing built for sharper client conversations. Follow the breaches, buyer pressures, market moves, identity risks, and security stories shaping the next meeting. This experimental podcast is AI-produced from source analysis through writing and narration, entirely on a small home server using open-source tools—no cloud AI services. It exists to explore what end-to-end local AI can create, so verify important details against the linked reporting.</description>
+    <itunes:summary>Season 1: Who Holds the Keys. A five-minute cybersecurity sales briefing built for sharper client conversations. Follow the breaches, buyer pressures, market moves, identity risks, and security stories shaping the next meeting. This experimental podcast is AI-produced from source analysis through writing and narration, entirely on a small home server using open-source tools—no cloud AI services. It exists to explore what end-to-end local AI can create, so verify important details against the linked reporting.</itunes:summary>
     <itunes:author>Identity Security Daily</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
-    <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/cover.png"/>
+    <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/show.jpg"/>
     <itunes:owner>
       <itunes:name>Identity Security Daily</itunes:name>
       <itunes:email>identity-security-daily@users.noreply.github.com</itunes:email>
     </itunes:owner>
     <image>
-      <url>https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/cover.png</url>
+      <url>https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/show.jpg</url>
       <title>Identity Security Daily</title>
-      <link>https://root-access-audio.github.io/podcast/</link>
+      <link>https://github.com/root-access-audio/podcast</link>
     </image>
-    <lastBuildDate>Thu, 01 Oct 2026 14:36:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 08:22:01 GMT</lastBuildDate>
     <generator>Identity Security Daily</generator>
+    <item>
+      <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
+      <itunes:title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</itunes:title>
+      <description><![CDATA[The cybersecurity market is shifting toward real-time AI agent security enforcement, as organizations grapple with unintended AI behaviors that mimic threats but lack malicious intent—creating a critical need to distinguish between genuine breaches and 'genie behavior' to avoid misallocating resources. What question should a seller ask? 'How do you measure and differentiate between genuine AI-driven breaches and unintended 'genie behavior' that fails to compromise systems?' The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.]]></description>
+      <itunes:summary>The cybersecurity market is shifting toward real-time AI agent security enforcement, as organizations grapple with unintended AI behaviors that mimic threats but lack malicious intent—creating a critical need to distinguish between genuine breaches and &apos;genie behavior&apos; to avoid misallocating resources. What question should a seller ask? &apos;How do you measure and differentiate between genuine AI-driven breaches and unintended &apos;genie behavior&apos; that fails to compromise systems?&apos; The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.</itunes:summary>
+      <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-02.mp3" length="4801197" type="audio/mpeg"/>
+      <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-02:identity-security-daily</guid>
+      <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-02.mp3</link>
+      <pubDate>Fri, 02 Oct 2026 08:22:01 GMT</pubDate>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-10-02.jpg"/>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>3</itunes:episode>
+      <podcast:season name="Who Holds the Keys">1</podcast:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Daily IAM Market Briefing for Leaders and Technical Practitioners</title>
       <itunes:title>Daily IAM Market Briefing for Leaders and Technical Practitioners</itunes:title>
       <description><![CDATA[The IAM market is shifting from static access control to dynamic, AI-driven security enforcement, with critical gaps emerging in real-time governance of AI agents and integrated identity workflows. This integration directly addresses a critical operational gap where governance teams define access but security teams manually enforce it, leading to potential security risks from outdated credentials. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.]]></description>
       <itunes:summary>The IAM market is shifting from static access control to dynamic, AI-driven security enforcement, with critical gaps emerging in real-time governance of AI agents and integrated identity workflows. This integration directly addresses a critical operational gap where governance teams define access but security teams manually enforce it, leading to potential security risks from outdated credentials. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.</itunes:summary>
-      <enclosure url="https://root-access-audio.github.io/podcast/episodes/2026-10-01.mp3" length="4798893" type="audio/mpeg"/>
+      <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-01.mp3" length="4798893" type="audio/mpeg"/>
       <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-01:identity-security-daily</guid>
-      <link>https://root-access-audio.github.io/podcast/episodes/2026-10-01.mp3</link>
+      <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-01.mp3</link>
       <pubDate>Thu, 01 Oct 2026 14:36:24 GMT</pubDate>
       <itunes:duration>00:05:00</itunes:duration>
+      <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-10-01.jpg"/>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>2</itunes:episode>
+      <podcast:season name="Who Holds the Keys">1</podcast:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -42,11 +63,15 @@
       <itunes:title>Daily IAM Market Briefing for Leaders and Technical Practitioners</itunes:title>
       <description><![CDATA[The IAM market is shifting toward real-time, AI-native security enforcement for non-human identities, driven by the rapid proliferation of AI agents and the critical gaps in current identity governance tools. As AI agents multiply, understanding their access to sensitive data is foundational to security, but current tools lack the ability to connect identity governance with data security for non-human identities. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.]]></description>
       <itunes:summary>The IAM market is shifting toward real-time, AI-native security enforcement for non-human identities, driven by the rapid proliferation of AI agents and the critical gaps in current identity governance tools. As AI agents multiply, understanding their access to sensitive data is foundational to security, but current tools lack the ability to connect identity governance with data security for non-human identities. The ARISE Framework addresses a critical gap in AI agent security where traditional identity tools fail to enforce real-time permissions checks, risking unauthorized actions by agents with valid credentials but no human oversight. This integration directly addresses the risk of AI-generated activities appearing legitimate while bypassing traditional access controls, enabling proactive governance of AI identities.</itunes:summary>
-      <enclosure url="https://root-access-audio.github.io/podcast/episodes/2026-09-30.mp3" length="4553291" type="audio/mpeg"/>
+      <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-09-30.mp3" length="4553291" type="audio/mpeg"/>
       <guid isPermaLink="false">tag:root-access-audio.github.io,2026-09-30:identity-security-daily</guid>
-      <link>https://root-access-audio.github.io/podcast/episodes/2026-09-30.mp3</link>
+      <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-09-30.mp3</link>
       <pubDate>Wed, 30 Sep 2026 20:36:31 GMT</pubDate>
       <itunes:duration>00:04:45</itunes:duration>
+      <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-09-30.jpg"/>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>1</itunes:episode>
+      <podcast:season name="Who Holds the Keys">1</podcast:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
