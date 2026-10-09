@@ -22,8 +22,25 @@
       <title>Identity Security Daily</title>
       <link>https://github.com/root-access-audio/podcast</link>
     </image>
-    <lastBuildDate>Mon, 05 Oct 2026 07:02:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 07:18:42 GMT</lastBuildDate>
     <generator>Identity Security Daily</generator>
+    <item>
+      <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
+      <itunes:title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</itunes:title>
+      <description><![CDATA[The market is shifting toward identity and legacy system security as clients face real-world risks from underprotected non-human identities and outdated SSO components, with forensic challenges emerging from mobile security gaps. What’s the most common geographic source for this NHI’s authentication attempts? How does this help us identify when an NHI is being misused? What question should a seller ask? 'How is your customer managing the lifecycle of legacy SSO components to prevent similar breaches?' How does this vulnerability affect the client's ability to retain digital evidence without triggering Apple's automatic data deletion?]]></description>
+      <itunes:summary>The market is shifting toward identity and legacy system security as clients face real-world risks from underprotected non-human identities and outdated SSO components, with forensic challenges emerging from mobile security gaps. What’s the most common geographic source for this NHI’s authentication attempts? How does this help us identify when an NHI is being misused? What question should a seller ask? &apos;How is your customer managing the lifecycle of legacy SSO components to prevent similar breaches?&apos; How does this vulnerability affect the client&apos;s ability to retain digital evidence without triggering Apple&apos;s automatic data deletion?</itunes:summary>
+      <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-09.mp3" length="4801197" type="audio/mpeg"/>
+      <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-09:identity-security-daily</guid>
+      <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-09.mp3</link>
+      <pubDate>Fri, 09 Oct 2026 07:18:42 GMT</pubDate>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-10-09.jpg"/>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>7</itunes:episode>
+      <podcast:season name="Who Holds the Keys">1</podcast:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
       <itunes:title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</itunes:title>
