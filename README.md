@@ -23,8 +23,8 @@ That means mistakes can happen. The pipeline is strict about evidence, but it is
 
 ## How an episode is made
 
-1. **Discover.** RSS feeds from security publishers and identity vendors are collected, plus targeted news searches for the security market, breaches, and buyer priorities.
-2. **Filter.** Duplicates, stock-price chatter, and low-context items are dropped. Candidates are ranked for relevance, freshness, and whether they would be useful in a customer conversation.
+1. **Discover.** RSS feeds from independent security publishers are collected, plus targeted news searches for identity security, the security market, breaches, and buyer priorities.
+2. **Filter.** Duplicates, stock-price chatter, low-context items, and direct competitor marketing posts are dropped. Candidates are ranked for relevance, freshness, and whether they would be useful in a customer conversation.
 3. **Read.** Each candidate article is fetched and its text extracted. That text stays on the server and is kept for up to 21 days. It is never published here.
 4. **Score sources.** Each source gets a trust score based on the publisher, article depth, author and date, promotional language, and whether other outlets report the same story.
 5. **Analyze.** A local language model reads each article and returns a structured analysis: what happened, technical impact, business impact, market significance, and caveats. Every claim must cite a specific sentence in the source. Analyses whose evidence fails the check are rejected.
@@ -60,7 +60,7 @@ No article text, prompt, or audio is sent to a hosted AI service.
 
 ## Sources and rights
 
-Stories come from public reporting, including Dark Reading, BleepingComputer, Krebs on Security, The Register, The Hacker News, CISA, Help Net Security, SecurityWeek, CSO Online, Cybersecurity Dive, Schneier on Security, and vendor blogs. Google News search results are used only to discover articles. Each episode's show notes link to the original articles. Full article text is not stored or republished here.
+Stories come from public reporting, including Dark Reading, BleepingComputer, Krebs on Security, The Register, The Hacker News, CISA, Help Net Security, SecurityWeek, CSO Online, Cybersecurity Dive, and Schneier on Security. Direct competitor marketing posts are excluded so no vendor content program can dominate the show. Google News search results are used only to discover articles. Each episode's show notes link to the original articles. Full article text is not stored or republished here.
 
 ## Disclaimer
 

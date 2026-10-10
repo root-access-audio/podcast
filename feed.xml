@@ -22,8 +22,25 @@
       <title>Identity Security Daily</title>
       <link>https://github.com/root-access-audio/podcast</link>
     </image>
-    <lastBuildDate>Fri, 09 Oct 2026 07:18:42 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 07:13:17 GMT</lastBuildDate>
     <generator>Identity Security Daily</generator>
+    <item>
+      <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
+      <itunes:title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</itunes:title>
+      <description><![CDATA[The market is experiencing heightened vulnerability in identity security due to misconfigured legacy systems and insecure cloud agent practices, creating urgent client concerns about data exposure and compliance risks. What question should a seller ask? 'How does your client ensure that agent credentials are not exposed via insecure IMDS endpoints and that IAM roles are scoped to individual agents rather than entire regions?' What question should a seller ask? 'How is your customer managing the lifecycle of legacy SSO components to prevent similar breaches?' How does this vulnerability affect the client's ability to retain digital evidence without triggering Apple's automatic data deletion?]]></description>
+      <itunes:summary>The market is experiencing heightened vulnerability in identity security due to misconfigured legacy systems and insecure cloud agent practices, creating urgent client concerns about data exposure and compliance risks. What question should a seller ask? &apos;How does your client ensure that agent credentials are not exposed via insecure IMDS endpoints and that IAM roles are scoped to individual agents rather than entire regions?&apos; What question should a seller ask? &apos;How is your customer managing the lifecycle of legacy SSO components to prevent similar breaches?&apos; How does this vulnerability affect the client&apos;s ability to retain digital evidence without triggering Apple&apos;s automatic data deletion?</itunes:summary>
+      <enclosure url="https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-10.mp3" length="4543149" type="audio/mpeg"/>
+      <guid isPermaLink="false">tag:root-access-audio.github.io,2026-10-10:identity-security-daily</guid>
+      <link>https://raw.githubusercontent.com/root-access-audio/podcast/main/episodes/2026-10-10.mp3</link>
+      <pubDate>Sat, 10 Oct 2026 07:13:17 GMT</pubDate>
+      <itunes:duration>00:04:44</itunes:duration>
+      <itunes:image href="https://raw.githubusercontent.com/root-access-audio/podcast/main/artwork/episodes/2026-10-10.jpg"/>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>8</itunes:episode>
+      <podcast:season name="Who Holds the Keys">1</podcast:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</title>
       <itunes:title>Daily Cybersecurity Market &amp; Sales Enablement Briefing</itunes:title>

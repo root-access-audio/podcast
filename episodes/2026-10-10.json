@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-10",
+  "title": "Daily Cybersecurity Market & Sales Enablement Briefing",
+  "summary": "The market is experiencing heightened vulnerability in identity security due to misconfigured legacy systems and insecure cloud agent practices, creating urgent client concerns about data exposure and compliance risks. What question should a seller ask? 'How does your client ensure that agent credentials are not exposed via insecure IMDS endpoints and that IAM roles are scoped to individual agents rather than entire regions?' What question should a seller ask? 'How is your customer managing the lifecycle of legacy SSO components to prevent similar breaches?' How does this vulnerability affect the client's ability to retain digital evidence without triggering Apple's automatic data deletion?",
+  "durationSec": 284,
+  "pubDate": "2026-10-10T07:13:17.434Z"
+}
